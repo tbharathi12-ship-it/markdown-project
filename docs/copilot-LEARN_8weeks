@@ -1,0 +1,221 @@
+
+# Copilot Web Dev – 8-Week Learning Prompts & Quizzes
+
+Keep this file in your project root (e.g., `/learning/`) and open it in VS Code. Use **Markdown Preview** (`Ctrl/Cmd + Shift + V`).
+
+---
+
+## Week 1: HTML, CSS, JavaScript Basics
+**Videos**
+- Introduction to HTML CSS JavaScript – Tutorial #1 (YouTube) – https://www.youtube.com/watch?v=EDJ9YbHXRZA
+- Build a Simple Website with HTML, CSS, JavaScript – Course for Beginners (YouTube) – https://www.youtube.com/watch?v=krfUjg0S2uI
+- HTML CSS and Javascript Website Design Tutorial - Beginner Project Fully Responsive (YouTube) – https://www.youtube.com/watch?v=FazgJVnrVuI
+
+**Copilot Prompts**
+- `// Create a semantic HTML layout with header, nav, main, section, aside, footer`
+- `// CSS: build a responsive 12-col grid with gap and fluid images`
+- `// JS: add a dark-mode toggle using CSS variables and localStorage`
+- `// Build a card component with hover animation and accessible focus styles`
+
+**Quiz (answer in code/comments)**
+1. What does the `<section>` element represent vs `<div>`?
+2. Name three semantic HTML tags and typical use.
+3. In `.card { display: grid; gap: 1rem; }`, what does `gap` control?
+4. Class vs id selectors—when to use each?
+5. What is the DOM? Show reading & updating text via JS.
+6. JS to toggle a class `open` on `<body>` from a button `#toggle`.
+7. How to open links in a new tab safely (`target` + security attr)?
+8. `==` vs `===` example.
+9. CSS box model essentials.
+10. Why `defer` when including external JS?
+
+---
+
+## Week 2: Responsive Design & Accessibility
+**Videos**
+- A Practical Guide to Responsive Web Design – https://www.youtube.com/watch?v=x4u1yp3Msao
+- Responsive Web Design Crash Course – Flexbox, Grid & Accessibility – https://www.youtube.com/watch?v=ipBhj3F5hqI
+- Learn Accessibility – Full a11y Tutorial – https://www.youtube.com/watch?v=e2nkq3h1P68
+
+**Copilot Prompts**
+- `// CSS: mobile-first layout with breakpoints at 600px and 960px`
+- `// Build an accessible hamburger nav with aria-expanded & keyboard support`
+- `// Implement prefers-color-scheme dark mode with CSS variables`
+- `// Add focus-visible styles for interactive elements`
+
+**Quiz**
+1. Define mobile-first CSS and benefits.
+2. Pick breakpoints for 3→1 column and justify.
+3. CSS to ensure images scale without overflow.
+4. ARIA roles—2 examples and usage.
+5. Keyboard-accessible hamburger menu (key events).
+6. CSS snippet for `prefers-color-scheme`.
+7. Two ways to ensure color contrast & testing approach.
+8. What does `:focus-visible` do? Provide CSS.
+9. Accessible label + input HTML.
+10. Quick devtools steps to test responsiveness.
+
+---
+
+## Week 3: Git & Version Control
+**Videos**
+- Introduction to Git | Version Control Basics – https://www.youtube.com/watch?v=oZpKSd8wdZk
+- Git for Professionals – Tools & Concepts – https://www.youtube.com/watch?v=Uszj_k0DGsg
+- Learn Git – Full Course for Beginners – https://www.youtube.com/watch?v=zTjRZNkhiEU
+
+**Copilot Prompts**
+- `# bash: generate a script to create a feature branch, commit, and push`
+- `# template: conventional commit message examples for feat/fix/docs`
+- `# git: steps to resolve a merge conflict with ours/theirs explanation`
+
+**Quiz**
+1. What problem does Git solve?
+2. File lifecycle from working dir to remote (commands).
+3. Clone vs fork.
+4. Commands to branch → commit → push → PR.
+5. When do conflicts happen? How to resolve.
+6. GitHub Flow vs Git Flow.
+7. Good commit message format (example).
+8. Stage only a hunk at CLI.
+9. Rebase vs merge—tradeoffs.
+10. Revert a bad pushed commit.
+
+---
+
+## Week 4: JavaScript Deep Dive
+**Videos**
+- JavaScript FULL Course with Advanced Project – https://www.youtube.com/watch?v=kXVq6UHcuLw
+- Advanced JavaScript Crash Course – https://www.youtube.com/watch?v=R9I85RhI7Cg
+
+**Copilot Prompts**
+- `// Write a closure-based counter with increment/reset`
+- `// Implement debounce(fn, delay) and demo with keyup`
+- `// Array utilities: map/filter/reduce examples with tests`
+- `// Async/await fetch with retries and exponential backoff`
+
+**Quiz**
+1. Closure—code example.
+2. `this` in arrow vs regular functions.
+3. map/filter/reduce demo.
+4. Event delegation—why useful?
+5. Async/await with try/catch around fetch.
+6. Prototype vs class syntax.
+7. When to use generators—iterator example.
+8. Implement debouncing.
+9. Shallow vs deep copy.
+10. Modules—default vs named exports.
+
+---
+
+## Week 5: React.js
+**Videos**
+- React JS - Tutorial for Beginners – https://www.youtube.com/watch?v=Ke90Tje7VS0
+- Learn React JS – Full Beginner’s Tutorial – https://www.youtube.com/watch?v=x4rFhThSX04
+- React Tutorial for Beginners – https://www.youtube.com/watch?v=SqcY0GlETPk
+
+**Copilot Prompts**
+- `// React: dark-mode toggle with useState and CSS vars`
+- `// Build a reusable List component with key prop handling`
+- `// Custom hook: useFetch(url) with loading/error states`
+- `// Context: theme provider & consumer example`
+
+**Quiz**
+1. Props vs state—example.
+2. useState dark-mode component.
+3. Controlled vs uncontrolled inputs.
+4. Why key prop?
+5. Lift state up between siblings.
+6. Two common useEffect patterns.
+7. Basic `useFetch` custom hook.
+8. When to use Context over prop drilling.
+9. Error boundaries (high level).
+10. Performance pitfalls & helpful hooks.
+
+---
+
+## Week 6: Node.js & Express
+**Videos**
+- Node.js and Express.js – Full Course – https://www.youtube.com/watch?v=Oe421EPjeBE
+- Express.js & Node.js – Full Tutorial – https://www.youtube.com/watch?v=G8uL0lFFoN0
+- Node.js and Express.js – Complete Course – https://www.youtube.com/watch?v=ekRpc5YgVZU
+
+**Copilot Prompts**
+- `// Express: minimal server with GET /health returning {status:"ok"}`
+- `// Middleware chain with logging, auth check, error handler`
+- `// JWT auth: register/login routes + verify middleware`
+- `// DB: CRUD route for /items using MongoDB or Postgres`
+
+**Quiz**
+1. Event loop & non‑blocking I/O.
+2. Minimal Express server (pseudo ok).
+3. Middleware flow & order.
+4. Routes/controllers for REST.
+5. Env vars & secure loading.
+6. JWT auth basics.
+7. 4xx vs 5xx examples.
+8. Central error handling.
+9. DB connect + one CRUD op.
+10. What is CORS & config snippet.
+
+---
+
+## Week 7: GitHub Copilot
+**Videos**
+- Getting Started with GitHub Copilot – https://www.youtube.com/watch?v=n0NlxUyA7FI
+- How to use GitHub Copilot (Complete Beginner’s Guide) – https://www.youtube.com/watch?v=SJqGYwRq0uc
+- GitHub Copilot 101 – Essential Features – https://www.youtube.com/watch?v=b5xcWdzAB5c
+
+**Copilot Prompts**
+- `// React: generate a form component with validation and submit handler`
+- `// Refactor function: explain + propose optimized version`
+- `// Generate unit tests from existing functions (Jest)`
+- `// Document a component with JSDoc and usage example`
+
+**Quiz**
+1. Three ways Copilot boosts productivity.
+2. A reliable prompt to generate a React form.
+3. Steps to refactor using Copilot Chat.
+4. What are Copilot Edits? When to use them.
+5. Responsible use: secrets & validation.
+6. Generate unit tests via Copilot.
+7. Steering suggestions (context, comments).
+8. Limitations & mitigation.
+9. Pairing with lint/format tools.
+10. Documenting components with Copilot.
+
+---
+
+## Week 8: Deployment (Vercel & Azure)
+**Videos**
+- Deploy Website on Vercel – https://www.youtube.com/watch?v=nbNY3cT0dU0
+- Deploy MERN Stack Frontend & Backend on Vercel – https://www.youtube.com/watch?v=mhQWPV8GUDw
+- How To Deploy on Vercel (Updated) – https://www.youtube.com/watch?v=3izAncxuO78
+
+**Copilot Prompts**
+- `# vercel.json: generate config for Next.js with env vars and headers`
+- `# CI/CD: GitHub Actions workflow to build & deploy on push to main`
+- `# Troubleshooting: checklist for common Vercel build errors`
+- `# Post‑deploy: script to run health checks & log metrics`
+
+**Quiz**
+1. Steps to deploy a Next.js app to Vercel with env vars.
+2. CI/CD auto‑deploy setup.
+3. Preview vs production on Vercel.
+4. Custom domain + DNS.
+5. Common build errors & fixes.
+6. Zero‑downtime deployments.
+7. Metrics/logs to check post‑deploy.
+8. Secure secrets for build/runtime.
+9. Static site vs Node backend on Vercel.
+10. (Optional) Azure Static Web Apps outline.
+
+---
+
+## Tips
+- Keep snippets in separate files (`/snippets`) and link to them here.
+- Use checkboxes to track progress:
+  - [ ] Watch videos
+  - [ ] Complete prompts
+  - [ ] Pass quiz (≥8/10)
+- Commit this file to a private Git repo for versioned notes.
+
