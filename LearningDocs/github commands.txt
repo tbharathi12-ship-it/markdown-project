@@ -1,0 +1,45 @@
+LOCAL COMMANDS
+-----------------
+git --version
+git config --list
+git config --global  --list
+git config  --global user.name 'xxx'
+git config  --global user.email 'xxx'
+
+--create new local repo and push your F5-pool-monitor project into  the'
+local repo.
+goto the folder  - terminal automatically take u to the proj folder
+>git init   
+   "Start tracking changes in this folder."
+ A hidden folder `.git` is created. This is where Git stores commit history, branches, staging area, etc. The directory becomes a repository. You can now use commands like `git add`, `git commit`, `git status` etc.
+
+> git add .     - adds  all files (.) to staging area
+> git reset HEAD readme.md   - unstage 
+     
+> git commit -m 'message'    - commits to local repo
+> git status - now it should say nothing to commit
+> git commit -a     - stage and commit at one command
+e.g    git commit -am 'updates'
+
+> rm -rf .git  -  remove the folder from GIT Version control
+> git ls-files  - list out all files in current workspace
+> rm <filename>
+
+
+REMOTE REPO Commands
+--------------------
+To push my local Workspace folder to Remote repo
+1. do  git init and commit ur code to local repo
+2. create a remote repo naming same as ur local repo name at GitHub.com
+3. Form VS code,
+ git remote add origin https://github.com/tbharathi12-ship-it/Bucks2bar         -link ur local repo to remote repo
+git branch -M main    name ur current local branch as 'main'  (even if named as something else, rename to 'main' forcibly with parm -M)
+git push -u origin main           -u upstream link ur local branch to remote branch, push the local branch main into remote repo Origin.
+
+
+
+
+               |
+  
+github: A web-based platform for hosting Git repositories.  View code, manage repos, track issues. visualy browsing repositories in browser
+GitHub CLI: A command-line tool (gh) to interact with GitHub directly from the terminal.  for Terminal workflow and automation scripts
