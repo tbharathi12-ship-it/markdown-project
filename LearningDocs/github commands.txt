@@ -13,17 +13,18 @@ goto the folder  - terminal automatically take u to the proj folder
    "Start tracking changes in this folder."
  A hidden folder `.git` is created. This is where Git stores commit history, branches, staging area, etc. The directory becomes a repository. You can now use commands like `git add`, `git commit`, `git status` etc.
 
-> git add .     - adds  all files (.) to staging area
-> git reset HEAD readme.md   - unstage 
+> git add .     - adds  all changed updated/new files  to staging area
+> git reset HEAD readme.md   - unstage the staged file
      
 > git commit -m 'message'    - commits to local repo
 > git status - now it should say nothing to commit
-> git commit -a     - stage and commit at one command
-e.g    git commit -am 'updates'
+> git commit -a     - commit all staged file
+e.g    git commit -am 'updates' -   stage and commit at one step
 
 > rm -rf .git  -  remove the folder from GIT Version control
-> git ls-files  - list out all files in current workspace
-> rm <filename>
+> git ls-files  - list out all files  thar are tracked (exclude new files uncommitted)
+> git rm <filename>  - remove file
+> git mv  f1.txt  f2.txt  -  rename file
 
 
 REMOTE REPO Commands
